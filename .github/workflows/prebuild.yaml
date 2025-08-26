@@ -35,6 +35,6 @@ jobs:
       uses: actions/upload-artifact@v4 # ¡Actualizado a la versión 4!
       with:
         name: email_lib_compiled
-        # El archivo .pyd se generará en la carpeta raíz
-        path: |
-          email_lib*.pyd
+        # Ajustamos el path para buscar cualquier archivo .pyd en el repositorio
+        # Esto es más confiable que un nombre específico.
+        path: '**/*.pyd'
