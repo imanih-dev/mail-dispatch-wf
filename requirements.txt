@@ -1,0 +1,4 @@
+exchangelib
+pydantic
+cython
+setuptools
